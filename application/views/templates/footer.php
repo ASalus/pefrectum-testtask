@@ -28,7 +28,7 @@
 					$.each(response, function(key, value) {
 						html += `<tr class="line-through" id='${value.id}'>`;
 						html += wrapOpen + `<input id='${value.id}' class="checkbox" type="checkbox" ${value.status == true ? 'checked' : ''}/>` + wrapClose;
-						html += wrapOpen + value.item_name.toUpperCase() + wrapClose;
+						html += wrapOpen + value.item_name + wrapClose;
 						html += wrapOpen + value.category_name + wrapClose;
 						status = value.status == true ? purchased : notPurchased;
 						html += wrapOpen + status + wrapClose;
